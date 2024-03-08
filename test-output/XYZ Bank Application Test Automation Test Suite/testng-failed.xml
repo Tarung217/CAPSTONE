@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [XYZ Bank Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="XYZ Bank App Test Cases(failed)">
+    <classes>
+      <class name="com.xyz.qa.testcases.Transaction_Tc">
+        <methods>
+          <include name="setUp"/>
+          <include name="depositWithdrawAndVerifyTransactions"/>
+        </methods>
+      </class> <!-- com.xyz.qa.testcases.Transaction_Tc -->
+      <class name="com.xyz.qa.testcases.Manager_CTc">
+        <methods>
+          <include name="verifyCustomerDetailsAndDelete"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.xyz.qa.testcases.Manager_CTc -->
+    </classes>
+  </test> <!-- XYZ Bank App Test Cases(failed) -->
+</suite> <!-- Failed suite [XYZ Bank Application Test Automation Test Suite] -->
